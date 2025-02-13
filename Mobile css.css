@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="styles.css">
+Body Styling:
+2. body {
+3. background-color: lightblue;
+4. font-family: Arial, sans-serif;
+5. margin: 20px;
+6. }
+o background-color: lightblue; sets the entire page's background color.
+o font-family: Arial, sans-serif; defines the primary and fallback fonts.
+o margin: 20px; adds space around the entire page content.
+7. Heading Styling:
+8. h1 {
+9. color: navy;
+10. font-size: 2em;
+11. }
+o color: navy; changes the heading text color to navy blue.
+o font-size: 2em; makes the heading twice the default text size.
+12. Paragraph Styling:
+13. p {
+14. color: darkslategray;
+15. font-size: 1.2em;
+16. }
+o color: darkslategray; sets a darker shade for paragraph text.
+o font-size: 1.2em; slightly increases the text size.
+17. List Styling:
+18. ul {
+19. list-style-type: square;
+20. }
+o list-style-type: square; changes the bullet points in the list to squares.
+21. Image Styling:
+22. img {
+23. max-width: 100%;
+24. height: auto;
+25. }
+o max-width: 100%; ensures the image never exceeds its container's width.
+o height: auto; maintains the image's aspect ratio.
+<a href="contact.html">Contact</a>
+<a href="rooms/canyon.html">Canyon</a>
+<a href="../index.html">Home</a>
+<a href="../events/weekend.html">Weekend</a>
+<div id=“top”> ..... </div>
+<a href=“#top”>Back to Top</a>
+<header role=“banner”>
+<a href="http://yahoo.com" target="_blank">Yahoo!</a>
+6
+<a href="http://www.w3.org/TR/html-markup">
+<h1>HTML5 Reference</h1>
+<p>Bookmark this site for a handy HTML5 reference.</p>
+</a>
+7<a href="tel:888-555-5555">Call 888-555-5555</a>
+<a href="sms:888-555-5555">Text 888-555-5555</a>
+<link rel="stylesheet" href="wildflower.css" type="text/css" media="screen">
+<link rel="stylesheet" href="wildflowerprint.css" type="text/css" media="print">
+#nav { display: none; }
+Configure font size and color for printing
+◦Use pt font sizes, use dark text color
+Control page breaks
+Example:
+.newpage { page-break-before: always; }
+Print URLs for hyperlinks
+Example:
+#sidebar a:after { content: " (" attr(href) ") "; }
+14
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+21
+
+<link href="lighthousemobile.css" rel="stylesheet"
+media="only all and (max-device-width: 480px)">
+Example within CSS
+@media only all and (max-width: 768px) {
+}
+22
+img { max-width: 100%;
+    height: auto; }
+    23
+    <picture>
+    <source media="(min-width: 1200px)" srcset="large.jpg">
+    <source media="(min-width: 800px)" srcset="medium.jpg">
+    <source media="(min-width: 320px)" srcset="small.jpg">
+    <img src="fallback.jpg" alt="waterwheel">
+    </picture>
+    24
+    <img src="fallback.jpg"
+    sizes="100vw"
+    srcset="large.jpg 1200w, medium.jpg 800w, small.jpg 320w"
+    alt="waterwheel">
+    25
+    #demo { display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row; }
+        nav { -webkit-flex: 1; flex: 1; }
+main { -webkit-flex: 7; flex:7; }
+aside { -webkit-flex:2; flex: 2 }
+28
+            
